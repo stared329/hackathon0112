@@ -108,6 +108,8 @@ img{
   .weather{
     width: 490px;
     margin: 0 auto;
+    padding: 0 20px;
+    background: #fff;
   } /*section*/
   .weather-content{
     position: relative;
@@ -132,13 +134,9 @@ img{
   }
 
   .weather-data{
-    /*
-      width값에 따라 반응형 
-    */
-    height: 122px;
-    /* border:2px solid #fdfdfd;
-    box-shadow: 2px 2px 2px #848484; */
+    height: 160px;
     border: 2px solid #ddd;
+    padding: 20px;
   }
   .weather-data > div{
     float: left;
@@ -175,10 +173,10 @@ img{
     display:inline-block;
     width: 50px;
     height:50px;
-    background-image: url("./image/sunny.png");
-    background-position: 0 0;
+    /* background-image: url("./image/sunny.png");
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%; */
   }
   .weather-state{
     margin-left: 20px;
@@ -186,21 +184,8 @@ img{
   .weather-img, .weather-state{ 
     vertical-align: middle;
   }
-  .search-top10{
-    width: 490px;
-    height: 52px;
-    margin:0 auto;
-    /* background-color:gold; */
-    
-  }
-  .search-top10 > div {
-    width: 50%;
-    float: left;
-    line-height: 150px; 
-  }
-  .search-top10 > div:first-child{
-    text-align: center;
-    font-style: italic;
+  .search-top10{    
+    margin: 25px auto;    
   }
   .search-item{
     background-color: antiquewhite;
@@ -221,4 +206,48 @@ img{
     font-weight: bold;
     font-style: normal;
     color: #fff;
+  }
+
+  .weather-quater-state{
+    width: 100%;
+    height: 130px;
+  }
+  .q-state{
+    width:25%;
+    float: left;
+    /* background-color:gold; */
+  }
+  .q-state:nth-child(odd){
+    background-color: #f2f2f2;
+  }
+  .q-state p {
+    position: relative;
+    text-align: center;
+  }
+  .q-state p:first-child{
+    height: 85px;
+    /* background-color:grey; */
+  }
+  .q-state p:last-child{
+    height: 45px;
+  }
+  .q-state .weather-img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    transform: translateX(61%);
+  }
+  .q-state .weather-state{
+    margin-top:50px;
+    margin-left: 0px;
+  }
+
+  .q-state .degree{
+    font-size: 100%;
+    line-height: initial;
+  }
+  .q-state .deg-unit{
+    top: 0;
+    font-size: 100%;
   }
