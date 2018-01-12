@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <title>이불밖은 위험행</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
   <div class="wrap">
     <a href="#content" class="ally">본문바로가기</a>
@@ -16,11 +18,11 @@
       </h1>
     </header>
     <main id="content" class="container">
-      
+
       <!-- 날씨 -->
       <section class="weather">
         <h3 class="weather-heading readable-hidden">날씨</h3>
-      
+
         <div class="weather-content">
           <h4 class="dong">신사동</h4>
           <span class="curr-time">시간: 
@@ -30,7 +32,7 @@
             <div class="left"><span class="degree">-6.0</span><sup class="deg-unit">&deg;C</sup></div>
             <div class="right">
               <p>
-                <span class="weather-img"></span>
+                <img class="weather-img">
                 <span class="weather-state">맑음</span>
               </p>
               <p>강수량 <span class="precipitation"></span></p>
@@ -40,15 +42,20 @@
       </section>
       <section class="search-top10 clearfix">
         <div><span>오늘 날씨에 딱 좋은</span></div>
-        <div class="search-item"><a href="./item.html">
-          <span><em>아이템 TOP10</em></span>
-        </a>
-      </div>
+        <div class="search-item">
+          <a href="./item.html">
+            <span><em>아이템 TOP10</em></span>
+          </a>
+        </div>
       </section>
 
 
     </main>
     <footer class="footer clearfix">푸터</footer>
   </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="js/planetsdk.js"></script>
+  <script src="js/index.js"></script>
 </body>
+
 </html>
